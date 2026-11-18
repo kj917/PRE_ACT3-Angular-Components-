@@ -1,0 +1,23 @@
+<main class="resume">
+  <app-header
+    [fullName]="fullName"
+    [location]="location"
+    [email]="email"
+    [phone]="phone"
+    [profile]="profile">
+  </app-header>
+
+  <app-skills
+    [skills]="skills"
+    (skillSelected)="onSkillSelected($event)">
+  </app-skills>
+
+  <div class="interaction">
+    <p>{{ message }}</p>
+  </div>
+
+  <app-footer
+    [fullName]="fullName"
+    [proficiencies]="proficiencies">
+  </app-footer>
+</main>
